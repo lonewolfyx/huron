@@ -1,0 +1,4 @@
+{
+    "extends": "@lonewolfyx/tsconfig/tsconfig.monorepo.json",
+    "compilerOptions": {}
+}

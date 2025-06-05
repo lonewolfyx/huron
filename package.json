@@ -1,0 +1,35 @@
+{
+    "name": "monorepo-template",
+    "type": "module",
+    "version": "0.0.0",
+    "private": true,
+    "author": "lonewolfyx (https://github.com/lonewolfyx/)",
+    "packageManager": "pnpm@10.11.1",
+    "description": "",
+    "license": "MIT",
+    "homepage": "https://github.com/codex-collective/monorepo-template",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/codex-collective/monorepo-template.git"
+    },
+    "bugs": {
+        "url": "https://github.com/codex-collective/monorepo-template/issues"
+    },
+    "scripts": {
+        "format": "prettier --write ./"
+    },
+    "keywords": [],
+    "dependencies": {
+        "fs-extra": "^11.3.0"
+    },
+    "devDependencies": {
+        "@lonewolfyx/tsconfig": "^0.0.5",
+        "@lonewolfyx/utils": "^0.0.0",
+        "@types/fs-extra": "^11.0.4",
+        "@types/node": "^22.15.29",
+        "prettier": "^3.5.3",
+        "prettier-plugin-multiline-arrays": "^4.0.3",
+        "tsx": "^4.19.4",
+        "typescript": "^5.8.3"
+    }
+}

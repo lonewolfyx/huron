@@ -1,9 +1,9 @@
 {
     "name": "huron",
+    "author": "lonewolfyx",
     "type": "module",
     "version": "0.0.1",
     "description": "a cool theme named after a freshwater lake",
-    "author": "lonewolfyx",
     "scripts": {
         "docs:dev": "vitepress dev",
         "docs:build": "vitepress build",

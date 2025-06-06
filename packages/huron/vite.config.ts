@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import dtsPlugin from 'vite-plugin-dts'
+// @ts-ignore
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({

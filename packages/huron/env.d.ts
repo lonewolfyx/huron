@@ -3,6 +3,7 @@
 interface ImportMetaEnv {
     readonly DEV: boolean
     readonly BASE_URL: string
+    readonly VITE_SOURCE_REPO_URL: string
 }
 
 interface ImportMeta {

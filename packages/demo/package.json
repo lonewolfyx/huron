@@ -1,12 +1,21 @@
 {
-    "name": "demo",
-    "version": "1.0.0",
+    "name": "@huron/demo",
+    "type": "module",
+    "version": "0.0.0",
+    "private": true,
+    "author": "lonewolfyx<https://github.com/lonewolfyx>",
+    "packageManager": "pnpm@10.11.1",
     "description": "",
-    "main": "index.js",
+    "license": "MIT",
     "scripts": {
+        "dev": "vitepress dev",
+        "docs:dev": "vitepress dev",
+        "docs:build": "vitepress build",
+        "docs:preview": "vitepress preview"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "packageManager": "pnpm@10.11.1"
+    "dependencies": {
+        "@huron/core": "workspace:*",
+        "vitepress": "^1.6.3",
+        "vue": "^3.5.16"
+    }
 }

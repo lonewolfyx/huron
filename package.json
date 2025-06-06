@@ -1,26 +1,31 @@
 {
-    "name": "monorepo-template",
+    "name": "@huron/monorepo",
     "type": "module",
     "version": "0.0.0",
     "private": true,
-    "author": "lonewolfyx (https://github.com/lonewolfyx/)",
+    "author": "lonewolfyx<https://github.com/lonewolfyx>",
     "packageManager": "pnpm@10.11.1",
     "description": "",
     "license": "MIT",
-    "homepage": "https://github.com/codex-collective/monorepo-template",
+    "homepage": "https://github.com/lonewolfyx/huron",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/codex-collective/monorepo-template.git"
+        "url": "git+git@github.com:lonewolfyx/huron.git"
     },
     "bugs": {
-        "url": "https://github.com/codex-collective/monorepo-template/issues"
+        "url": "https://github.com/lonewolfyx/huron/issues"
     },
     "scripts": {
+        "build": "pnpm -r run build",
         "format": "prettier --write ./"
     },
     "keywords": [],
     "dependencies": {
-        "fs-extra": "^11.3.0"
+        "@tailwindcss/vite": "^4.1.8",
+        "fs-extra": "^11.3.0",
+        "tailwindcss": "^4.1.8",
+        "vitepress": "^1.6.3",
+        "vue": "^3.5.16"
     },
     "devDependencies": {
         "@lonewolfyx/tsconfig": "^0.0.5",

@@ -1,0 +1,44 @@
+{
+    "name": "@huron/core",
+    "type": "module",
+    "version": "0.0.0",
+    "author": "lonewolfyx<https://github.com/lonewolfyx>",
+    "packageManager": "pnpm@10.11.1",
+    "description": "",
+    "keywords": [],
+    "license": "MIT",
+    "homepage": "https://github.com/lonewolfyx/huron/blob/master/packages/huron/package.json#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lonewolfyx/huron.git",
+        "directory": "packages/huron"
+    },
+    "bugs": {
+        "url": "https://github.com/lonewolfyx/huron/issues"
+    },
+    "module": "dist/huron.es.js",
+    "types": "dist/src/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/huron.es.js",
+            "types": "./dist/src/index.d.ts"
+        },
+        "./style.css": "./dist/core.css"
+    },
+    "scripts": {
+        "dev": "vite build --watch",
+        "build": "vite build"
+    },
+    "dependencies": {
+        "@tailwindcss/vite": "^4.1.8",
+        "tailwindcss": "^4.1.8",
+        "vue": "^3.5.16"
+    },
+    "devDependencies": {
+        "@lonewolfyx/tsconfig": "^0.0.5",
+        "@vitejs/plugin-vue": "^5.2.4",
+        "typescript": "^5.8.3",
+        "vite": "^6.3.5",
+        "vite-plugin-dts": "^4.5.4"
+    }
+}

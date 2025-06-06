@@ -1,0 +1,8 @@
+{
+    "extends": "@lonewolfyx/tsconfig/tsconfig.lib.json",
+    "compilerOptions": {},
+    "include": [
+        "src/**/*",
+        "env.d.ts"
+    ]
+}

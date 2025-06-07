@@ -1,6 +1,6 @@
 <template>
     <div class="bg-background relative z-10 flex min-h-svh flex-col">
-        <header class="bg-background sticky top-0 z-50 w-full">
+        <header class="bg-background/95 sticky top-0 z-50 w-full backdrop-blur supports-[backdrop-filter]:bg-background/60">
             <div class="container-wrapper 3xl:fixed:px-0 px-6">
                 <div
                     class="3xl:fixed:container flex h-[calc(.25rem*14)] items-center gap-2 **:data-[slot=separator]:!h-4"

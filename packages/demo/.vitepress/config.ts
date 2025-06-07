@@ -39,6 +39,9 @@ export default defineConfig({
         // 搜索
         search: {
             provider: 'local'
+        },
+        outline: {
+            label: '页面导航'
         }
     }
 })

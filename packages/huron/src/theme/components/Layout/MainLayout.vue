@@ -36,12 +36,14 @@
                         <div class="flex items-stretch text-[1.05rem] sm:text-[15px] xl:w-full">
                             <div class="flex min-w-0 flex-1 flex-col">
                                 <div
-                                    class="mx-auto flex w-full max-w-2xl min-w-0 flex-1 flex-col gap-8 px-4 py-6 text-neutral-800 md:px-0 lg:py-8 dark:text-neutral-300"
+                                    class="vp-doc mx-auto flex w-full max-w-2xl min-w-0 flex-1 flex-col gap-8 px-4 py-6 text-neutral-800 md:px-0 lg:py-8 dark:text-neutral-300"
                                 >
                                     <Content />
                                 </div>
                             </div>
-                            <div class="sticky h-[calc(100vh-3.5rem)] w-72">asd</div>
+                            <div class="sticky h-[calc(100vh-10rem)] w-72 text-sm">
+                                <HnContentSidebar />
+                            </div>
                         </div>
                     </div>
                 </SidebarProvider>
@@ -66,12 +68,14 @@ import { Content, useData } from 'vitepress'
 import HnFooter from '../HnFooter.vue'
 import HnSidebar from '../HnSidebar.vue'
 import { SidebarProvider } from '../sidebar'
+import HnContentSidebar from '../HnContentSidebar.vue'
 
 defineOptions({
     name: 'MainLayout'
 })
 
 const data = useData()
+
 onMounted(() => {
     console.log(data)
 })

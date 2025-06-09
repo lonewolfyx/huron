@@ -29,8 +29,12 @@
                                     <Content />
                                 </div>
                             </div>
-                            <div class="sticky h-[calc(100vh-10rem)] w-72 text-sm">
-                                <HnContentSidebar />
+                            <div class="hidden text-sm xl:block">
+                                <div
+                                    class="sticky top-[calc(var(--header-height)+1px)] z-30 ml-auto hidden h-[calc(100svh-var(--header-height)-var(--footer-height))] w-72 flex-col gap-4 overflow-hidden overscroll-none pb-8 xl:flex"
+                                >
+                                    <HnContentSidebar />
+                                </div>
                             </div>
                         </div>
                     </div>

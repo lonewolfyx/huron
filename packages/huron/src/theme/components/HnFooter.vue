@@ -24,7 +24,6 @@ defineOptions({
 
 // const { site } = useData()
 const githubUrl = import.meta.env.VITE_SOURCE_REPO_URL
-
 </script>
 
 <style scoped></style>

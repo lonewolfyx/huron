@@ -1,26 +1,14 @@
 <template>
     <div class="bg-background relative z-10 flex min-h-svh flex-col">
-        <header class="bg-background/95 sticky top-0 z-50 w-full backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <header
+            class="bg-background/95 sticky top-0 z-50 w-full backdrop-blur supports-[backdrop-filter]:bg-background/60"
+        >
             <div class="container-wrapper 3xl:fixed:px-0 px-6">
                 <div
                     class="3xl:fixed:container flex h-[calc(.25rem*14)] items-center gap-2 **:data-[slot=separator]:!h-4"
                 >
                     <NavigationMenuTitle />
-                    <NavigationMenu>
-                        <NavigationMenuList>
-                            <NavigationMenuItem>
-                                <NavigationMenuLink :class="navigationMenuTriggerStyle()" href="/api-examples">
-                                    Api Examples
-                                </NavigationMenuLink>
-                            </NavigationMenuItem>
-
-                            <NavigationMenuItem>
-                                <NavigationMenuLink :class="navigationMenuTriggerStyle()" href="/markdown-examples">
-                                    Markdown Examples
-                                </NavigationMenuLink>
-                            </NavigationMenuItem>
-                        </NavigationMenuList>
-                    </NavigationMenu>
+                    <HnNav />
                 </div>
             </div>
         </header>
@@ -55,20 +43,14 @@
 </template>
 
 <script lang="ts" setup>
-import {
-    NavigationMenu,
-    NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList,
-    NavigationMenuTitle,
-    navigationMenuTriggerStyle
-} from '../navigation-menu'
+import { NavigationMenuTitle } from '../navigation-menu'
 import { onMounted } from 'vue'
 import { Content, useData } from 'vitepress'
 import HnFooter from '../HnFooter.vue'
 import HnSidebar from '../HnSidebar.vue'
 import { SidebarProvider } from '../sidebar'
 import HnContentSidebar from '../HnContentSidebar.vue'
+import HnNav from '../HnNav.vue'
 
 defineOptions({
     name: 'MainLayout'
